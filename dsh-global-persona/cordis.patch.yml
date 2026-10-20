@@ -1,0 +1,6 @@
+- insert:
+    - id: dsh-global-persona
+      name: dsh-global-persona
+      config:
+        enabled: true
+        persona: ""

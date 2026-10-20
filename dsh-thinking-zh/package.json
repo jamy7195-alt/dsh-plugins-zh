@@ -1,0 +1,33 @@
+{
+  "name": "dsh-thinking-zh",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "让 DSH 的思考（reasoning）使用简体中文：系统提示词语言规则 + 英文思考流实时翻译。",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "icon": "icon.svg",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "reasoning",
+    "thinking",
+    "chinese"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "title": "思考中文",
+    "description": "强制思考过程使用简体中文，并把残留的英文思考实时翻译为中文。"
+  }
+}

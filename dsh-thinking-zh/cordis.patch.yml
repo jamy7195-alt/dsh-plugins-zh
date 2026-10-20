@@ -1,0 +1,6 @@
+- insert:
+    - id: dsh-thinking-zh
+      name: dsh-thinking-zh
+      config:
+        promptRule: true
+        translate: true

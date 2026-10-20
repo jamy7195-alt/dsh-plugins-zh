@@ -1,0 +1,4 @@
+{
+  "title": "Thinking in Chinese",
+  "description": "Forces the agent's reasoning to Simplified Chinese and live-translates any English reasoning that still slips through."
+}

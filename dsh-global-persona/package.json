@@ -1,0 +1,36 @@
+{
+  "name": "dsh-global-persona",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "给 DSH 设置一个所有会话共用的全局人格，并在「设置 → 通用」里直接编辑。",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "icon": "icon.svg",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "persona",
+    "system-prompt"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "title": "全局人格",
+    "description": "一个所有会话共用的系统提示词人格，可在设置里直接编辑。"
+  }
+}
